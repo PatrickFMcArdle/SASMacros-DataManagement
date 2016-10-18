@@ -53,8 +53,7 @@ data _null_ ;
 run;
 
 * Delete datasets and views in the work directory;
-proc datasets nolist; delete 	_: (memtype=data)
-								_: (memtype=view); run;
+proc datasets nolist; delete 	_: (memtype=data)	_: (memtype=view); run;
 
 %mend cleanup;
 
