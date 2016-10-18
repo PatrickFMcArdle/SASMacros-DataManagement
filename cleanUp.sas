@@ -52,8 +52,9 @@ data _null_ ;
 	rc=libname(libname);
 run;
 
-* Delete datasets in the work directory;
-proc datasets nolist; delete _: ; run;
+* Delete datasets and views in the work directory;
+proc datasets nolist; delete 	_: (memtype=data)
+								_: (memtype=view); run;
 
 %mend cleanup;
 
