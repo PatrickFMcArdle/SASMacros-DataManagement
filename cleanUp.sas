@@ -18,9 +18,8 @@ This macro
 
 %macro cleanUp;
 
-* Clear title and footnotes;
-title;
-footnote;
+* reset goptions;
+goptions reset=all;
 
 * Clear global macro variables;
 data _mvtodelete;
