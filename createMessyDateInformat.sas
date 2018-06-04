@@ -17,7 +17,9 @@ based on January 1 of that year.
 
 proc format;   
 	invalue messyDate
-		"/^\d{1,2}\D\d{1,2}\D\d{4}/" (regexp)	= [mmddyy10.]    
+		"Unknown"								= .
+		"/^\d{1,2}\D\d{1,2}\D\d{4}/" (regexp)	= [mmddyy10.]  
+		"/^\d{1,2}\d{1,2}\d{4}/" (regexp)	= [mmddyy10.]    
 		"/^\d{4}/" (regexp) 					= [B8601DA4.]
 		other 									= [anydtdte32.]
 	;
