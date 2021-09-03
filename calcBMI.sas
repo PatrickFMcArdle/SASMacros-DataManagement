@@ -1,5 +1,5 @@
 /****************************************************
-Program: getFromGitHub.sas
+Program: calcBMI.sas
 Author: Patrick F. McArdle
 Date: 4 August 2017
 
