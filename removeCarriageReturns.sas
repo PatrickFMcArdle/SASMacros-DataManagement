@@ -1,14 +1,15 @@
-/*******************************
-This macro removes carriage return from quoted strings within
-a specified file
+/****************************************************
+Program: removeCarriageReturns.sas
+Author: Patrick F. McArdle
+Date: 22 AUG 2025
 
-It is helpful to remove do this before loading into a dataset
+Call with: %removeCarriageReturns(_fileRefIn, _fileRefOut);
 
-Call:
-%removeCarriageReturns(_my_out, _fixed);
+This macro 
+	  removes all carriage returns from quoted strings
+   in the specified file
 
-*****************************/
-
+***************************************************/
 
 %macro removeCarriageReturns(inFileRef, outFileRef);
 data _null_;
